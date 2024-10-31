@@ -1,83 +1,173 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata dan Riwayat Hidup</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        img {
-            width: 150px;
-            height: auto;
-            border-radius: 75px;
-        }
-        section {
-            background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            border-bottom: 2px solid #007BFF;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-    </style>
+    <title>Toko Baju</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/t.webp">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
 </head>
 <body>
-    <header>
-        <h1>Anisah SUkardi</h1>
-        <img src="img/foto.jpg" alt="Foto Profil">
-    </header>
     
-    <section id="about">
-        <h2>Tentang Saya</h2>
-        <p>Saya adalah seorang mahasiswi.</p>
+        <nav class="navbar">
+            <h1><span>Toko</span> Anisah</h1>
+
+            <ul class="menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        <!---
+        <div class="right-nav">
+            <a href="#" class="like">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            <a href="#" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>--->
+        </nav>
+    
+    <section id="search-banner">
+        <!--<img src="img/t2.jfif" class="t-1" alt="t">
+        <img src="img/t3.jfif" class="t-2" alt="t-2">-->
+
+        <div class="search-banner-text">
+            <h3>Order Your Daily Groceries</h3>
+            <strong>#Free Delivery</strong>
+            <form action="" class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" placeholder="search-your-daily-groceries" name="search" required>
+                <input type="submit" class="search-btn" value="search">
+            </form>
+        </div>
+    </section>
+
+    <section id="category">
+        <div class="category-heading">
+            <h2>Category</h2>
+            <span>All</span>
+        </div>
+        <div class="category-container">
+            <a href="#" class="category-box">
+                <img src="img/t1.png" alt="tt">
+                <span>Baju</span>
+            </a>
+            <a href="#" class="category-box">
+                <img src="img/t1.png" alt="tt">
+                <span>Celana</span>
+            </a>
+        </div>
     </section>
     
-    <section id="education">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li>S1 Ilmu Komputer, Universitas XYZ, 2020</li>
-            <li>SMA, SMA Negeri 1, 2016</li>
-        </ul>
+    <section id="popular-product">
+        <div class="product-heading">
+            <h4>Product</h4>
+            <span>All</span>
+        </div>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="img/t1.png" alt="ttt">
+                <strong>Baju Lengan Panjang</strong>
+                <span class="price">100.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <div class="product-box">
+                <img src="img/t2.png" alt="ttt">
+                <strong>Baju Lengan Pendek</strong>
+                <span class="price">100.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <div class="product-box">
+                <img src="img/t3.png" alt="ttt">
+                <strong>Jaket</strong>
+                <span class="price">200.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+        </div>
     </section>
-    
-    <section id="experience">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li>Software Engineer, PT ABC, 2021 - Sekarang</li>
-            <li>Intern, PT DEF, 2020 - 2021</li>
-        </ul>
+
+    <section id="popular-bundle-pack">
+        <div class="product-heading">
+            <h4>Product</h4>
+        </div>
+        <div class="product-container">
+            <div class="product-box">
+                <img src="img/t4.png" alt="ttt">
+                <strong>Celana Panjang Lentur</strong>
+                <span class="price">100.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <div class="product-box">
+                <img src="img/t5.png" alt="ttt">
+                <strong>Celana Pendek Kolor</strong>
+                <span class="price">100.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+            <div class="product-box">
+                <img src="img/j6.png" alt="ttt">
+                <strong>Celana Jeans</strong>
+                <span class="price">100.000</span>
+                <a href="#" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>Add to Cart
+                </a>
+                <a href="#" class="like-btn">
+                    <i class="far fa-heart"></i>
+                </a>
+            </div>
+        </div>
     </section>
-    
-    <section id="skills">
-        <h2>Keterampilan</h2>
-        <ul>
-            <li>Bahasa Pemrograman: Python, Java, JavaScript</li>
-            <li>Desain Grafis: Adobe Photoshop, Figma</li>
-            <li>Database: MySQL, MongoDB</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Kontak</h2>
-        <p>Email: email@example.com</p>
-        <p>Telepon: 123-456-7890</p>
-        <p>LinkedIn: linkedin.com/in/namaanda</p>
-    </section>
+
+    <!--<section id="clients">
+        <div class="client-heading">
+            <h5>Tentang</h5>
+        </div>
+        <div class="client-box-container">
+            <div class="client-box">
+                <div class="client-profile">
+                    <img src="img/t6.jpg" alt="client">
+                    <div class="profile-text">
+                        <strong>Karrel</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Produknya sangat bagus dan berkuatlitas</p>
+    </section>-->
 </body>
 </html>
